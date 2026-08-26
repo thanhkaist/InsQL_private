@@ -95,11 +95,7 @@ Reproduce the λ ablation with `flow_ratio={1,0.75,0.5,0.25,0}` and the K ablati
 
 Per-task η and `weight_temperature` are set in each task YAML.
 
-## 🔬 Analysis
-
-`notebook/flowvsmeanflow.ipynb` contains the multimodal checkerboard study comparing flow matching against compositional average-velocity modeling under few-step generation.
-
-The real-robot manipulation experiments (Sawyer arm; Pickup Banana and Sweep Cube) are **not included** in this repository.
+**Not included in this repository:** the multimodal checkerboard toy study and the real-world robotic manipulation experiments (Sawyer arm; Pickup Banana and Sweep Cube).
 
 ## Citation
 
