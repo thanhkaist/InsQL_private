@@ -1,0 +1,68 @@
+# Experiment outputs
+results/
+results_*/
+outputs/
+multirun/
+video_outputs/
+wandb/
+logs/
+*.out
+nohup.out
+
+# Checkpoints / data
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+datasets/
+
+# Media
+*.mp4
+*.gif
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+wheels/
+*.egg-info/
+*.egg
+cleandiffuser/_version.py
+
+# Testing / typing caches
+.pytest_cache/
+.mypy_cache/
+.cache
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments
+.env*
+.venv/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

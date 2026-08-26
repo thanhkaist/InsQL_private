@@ -1,0 +1,49 @@
+[project]
+name = "cleandiffuser"
+dynamic = ["version"]
+description = "InsQL: Instant Flow Q-Learning for offline RL (built on CleanDiffuser)"
+authors = [{ name = "Thanh Nguyen" }]
+readme = "README.md"
+requires-python = ">= 3.10"
+keywords = ["offline reinforcement learning", "flow matching", "pytorch"]
+dependencies = [
+    "numpy==1.23.5",
+    "einops",
+    "zarr>=2.16.1",
+    "av>=12.2.0",
+    "dill>=0.3.8",
+    "mujoco_py>=2.0",
+    "mujoco==2.3.7",
+    "gym==0.23.1",
+    "dm_control==1.0.14",
+    "cython==0.29.37",
+    "numba<0.60.0",
+    "matplotlib<=3.7.5",
+    "six",
+    "hydra-core",
+    "zarr<2.17",
+    "wandb",
+    "dill",
+    "av",
+    "pygame",
+    "pymunk",
+    "shapely<2.0.0",
+    "scikit-image<0.23.0",
+    "opencv-python",
+    "imagecodecs",
+]
+
+[project.urls]
+Upstream = "https://github.com/CleanDiffuserTeam/CleanDiffuser"
+
+[build-system]
+requires = ["setuptools>=61.0.0", "setuptools_scm", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "cleandiffuser/_version.py"
+version_scheme = "post-release"
+local_scheme = "dirty-tag"
+
+[tool.setuptools.packages.find]
+include = ["cleandiffuser"]

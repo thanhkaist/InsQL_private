@@ -1,0 +1,22 @@
+# Conda environment for InsQL (Python 3.10).
+#
+#   conda env create -f environment.yml
+#   conda activate insql
+#
+# MuJoCo 210 and mujoco-py must be installed first; see the Setup section of the README.
+name: insql
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip=23
+  - setuptools=63.2.0
+  - wheel=0.38.4
+  - protobuf=3.20
+  - mesalib
+  - glew
+  - glfw
+  - libffi
+  - libstdcxx-ng
+  - pip:
+      - -r requirements.txt
