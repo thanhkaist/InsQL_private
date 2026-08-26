@@ -48,10 +48,9 @@ def pipeline(args):
 
     save_path = f'{args.save_dir}/{args.pipeline_name}/'+ base_path+ f'/{args.task.env_name}/'
     video_path = f'video_outputs/{args.pipeline_name}/'+ base_path+ f'/{args.task.env_name}/'
-    if os.path.exists(save_path) is False:
-        os.makedirs(save_path)
-    if os.path.exists(video_path) is False:
-        os.makedirs(video_path)
+    os.makedirs(save_path, exist_ok=True)
+    if args.mode == "visual":
+        os.makedirs(video_path, exist_ok=True)
 
     # ---------------------- Create Dataset ----------------------
     env = gym.make(args.task.env_name)
