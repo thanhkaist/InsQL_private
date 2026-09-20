@@ -95,8 +95,6 @@ Reproduce the λ ablation with `flow_ratio={1,0.75,0.5,0.25,0}` and the K ablati
 
 Per-task η and `weight_temperature` are set in each task YAML.
 
-**Not included in this repository:** the multimodal checkerboard toy study and the real-world robotic manipulation experiments (Sawyer arm; Pickup Banana and Sweep Cube).
-
 ## Citation
 
 ```bibtex
