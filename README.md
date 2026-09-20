@@ -70,8 +70,8 @@ Add `enable_wandb=true project=InsQL group=<group>` to log to Weights & Biases; 
 
 ```sh
 CUDA_VISIBLE_DEVICES=0 python pipelines/train_insql_d4rl_mujoco.py \
-    task=halfcheetah-medium-expert-v2 mode=inference seed=0 \
-    name=hc_me_s0 save_dir=results ckpt=latest
+    task=halfcheetah-medium-v2 mode=inference seed=0 \
+    name=hc_m_s0 save_dir=results ckpt=latest
 ```
 
 Pass the same `task`, `seed` and `save_dir` used for training, since those determine the checkpoint path.
